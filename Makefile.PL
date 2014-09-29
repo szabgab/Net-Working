@@ -7,6 +7,7 @@ my %conf = (
 	VERSION_FROM  => 'lib/Net/Worker.pm',
 	ABSTRACT_FROM => 'lib/Net/Worker.pm',
 	PREREQ_PM     => {
+		'Moo'                        => '1.006000',
 		'YAML'                       => '1.11',
 	},
 );

@@ -1,0 +1,3 @@
+#!perl
+use Net::Worker;
+Net::Worker->new_with_options->run;
