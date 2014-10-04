@@ -1,4 +1,4 @@
-Net::Worker - to find out why the network does not work
+Net::Working - to find out why the network does not work
 
 
 

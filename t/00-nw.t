@@ -8,16 +8,16 @@ my $dir = tempdir( CLEANUP => 1 );
 
 plan tests => 6;
 
-use Net::Worker;
-my $nw = Net::Worker->new;
+use Net::Working;
+my $nw = Net::Working->new;
 
-isa_ok $nw, 'Net::Worker';
+isa_ok $nw, 'Net::Working';
 
 package T;
-use parent 'Net::Worker';
+use parent 'Net::Working';
 
 sub config_file {
-	return "$dir/networker";
+	return "$dir/net_working";
 }
 
 package main;

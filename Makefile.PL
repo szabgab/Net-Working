@@ -3,9 +3,9 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %conf = (
-	NAME          => 'Net::Worker',
-	VERSION_FROM  => 'lib/Net/Worker.pm',
-	ABSTRACT_FROM => 'lib/Net/Worker.pm',
+	NAME          => 'Net::Working',
+	VERSION_FROM  => 'lib/Net/Working.pm',
+	ABSTRACT_FROM => 'lib/Net/Working.pm',
 	PREREQ_PM     => {
 		'File::HomeDir'              => '1.00',
 		'Moo'                        => '1.006000',
@@ -23,8 +23,8 @@ if (eval { ExtUtils::MakeMaker->VERSION(6.46) }) {
 		resources => {
 			repository => {
 				type => 'git',
-				url  => 'http://github.com/szabgab/Net-Worker.git',
-				web  => 'http://github.com/szabgab/Net-Worker',
+				url  => 'http://github.com/szabgab/Net-Working.git',
+				web  => 'http://github.com/szabgab/Net-Working',
 			}
 		}
 	};

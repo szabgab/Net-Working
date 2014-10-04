@@ -1,4 +1,4 @@
-package Net::Worker;
+package Net::Working;
 use Moo;
 use MooX::Options;
 use 5.010;
@@ -18,7 +18,7 @@ option addprofile => (is => 'ro', format => 's');
 has config => (is => 'rw');
 
 sub config_file {
-	return File::Spec->catfile( File::HomeDir->my_home, '.networker' );
+	return File::Spec->catfile( File::HomeDir->my_home, '.net_working' );
 }
 
 sub load_config {
@@ -86,7 +86,7 @@ sub run {
 
 =head NAME
 
-Net::Worker - checking network connectivity
+Net::Working - checking network connectivity
 
 =cut
 
